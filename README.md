@@ -5,19 +5,28 @@
 # Purposes
 - Smoke Test for Gmail App
 
+# CLONE REPOSITORY
+```
+Branch: master
+```
 
 # Installation
+
+1. Go to the folder 'webdriverio-cucumber-pom-boilerplate'
+2. Then run the command:
 
 ```
 npm install
 ```
 
-
-# Running the Sample Scenarios
+# Running the Smoke Scenarios
 
 ```
 npm run test
 ```
+
+# Results
+- After running a cucumber result will be displayed with the results of the tests.
 
 
 # License
