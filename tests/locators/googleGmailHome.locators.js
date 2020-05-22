@@ -4,7 +4,7 @@ class googleGmailHome {
     this.nextButton = '//*[@class="RveJvd snByac"]';
     this.passwordField = '//*[@name="password"]';
     this.googleHomeLogo =  'svg.l5Lhkf';
-    this.userAnotherAccountButton = './/li[@class="JDAKTe eARute W7Aapd zpCp3 SmR8"]';
+    this.userAnotherAccountButton = 'li.JDAKTe.eARute.W7Aapd.zpCp3.SmR8';
   }
 }
 

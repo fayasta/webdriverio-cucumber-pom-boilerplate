@@ -17,10 +17,14 @@ class googleGmailHome extends NativePage {
     const emailField = $(this.webdriverIOGooglePageElement.emailField)
 
     if (!emailField.isDisplayed()) {
+      if(!anotherAccountOption.isDisplayed()){
+        browser.url('https://mail.google.com/mail/u/0/?logout');
+      }
       anotherAccountOption.waitForDisplayed();
       browser.pause(2000)
       anotherAccountOption.waitForClickable(4000)
       anotherAccountOption.click();
+
     }
 
     emailField.waitForDisplayed();
