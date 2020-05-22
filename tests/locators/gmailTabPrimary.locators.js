@@ -1,6 +1,6 @@
 class gmailTabPrimary {
     constructor() {
-      this.primaryTab = './/*[@id=":2a"]';
+      this.primaryTab = './/div[@class="aAy J-KU-KO aIf-aLe"]';
       this.tableEmails = './/*[@id=":2d"]';
       //For limit time, only gets first email
       this.firstEmail = './/div[@class="ae4 UI"]//span[@class="bog"]/span';

@@ -24,13 +24,11 @@ When(/^I delete the email found$/, () => {
 });
 
 
-
 Then(/^I delete selected email$/, () => {
     tabPrimary.openEmailFound()
     email.deleteEmail();
     gmailHome.validateEmailWasDeleted();
 });
-
 
 
 Then(/^I cancel scheduled email$/, () => {

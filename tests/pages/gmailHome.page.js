@@ -1,5 +1,5 @@
 const NativePage = require('./native.page.js');
-
+const assert = require('assert');
 
 class gmailHome extends NativePage {
 
@@ -9,16 +9,20 @@ class gmailHome extends NativePage {
 
   validateEmailWasSent(){
     const successMessage = $(this.webdriverIOgmailHomePageElement.spanSuccessMessage)
-    successMessage.waitForDisplayed();
+    successMessage.waitForDisplayed()
+    assert.equal(successMessage.waitForDisplayed(),true)  
   }
 
   validateEmailWasDeleted(){
     const deletedSuccessMessage = $(this.webdriverIOgmailHomePageElement.spanDeletedSuccessMessage)
-    deletedSuccessMessage.waitForDisplayed();
+    deletedSuccessMessage.waitForDisplayed()
+    assert.equal(deletedSuccessMessage.waitForDisplayed(),true)  
   }
+
   validateEmailWasScheduled(){
     const spanScheduledSuccessMessage = $(this.webdriverIOgmailHomePageElement.spanScheduledSuccessMessage)
-    spanScheduledSuccessMessage.waitForDisplayed(); 
+    spanScheduledSuccessMessage.waitForDisplayed()
+    assert.equal(spanScheduledSuccessMessage.waitForDisplayed(),true)  
   }
 }
 

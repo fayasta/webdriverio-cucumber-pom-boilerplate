@@ -11,13 +11,13 @@ class gmailTopBar extends NativePage {
     const gmailLogo = $(this.webdriverIOTopBarPageElement.gmailLogo)
     gmailLogo.waitForDisplayed()
     gmailLogo.click()
-    
+   // browser.pause(2000)
     const primaryTabElement = $(this.webdriverIOTopBarPageElement.primaryTabElement)
     primaryTabElement.waitForDisplayed()
   }
 
   logOutApp(){
-    browser.pause(2000)
+    browser.pause(4000)
     const profileButton = $(this.webdriverIOTopBarPageElement.userIcon)
     profileButton.waitForDisplayed()
     profileButton.click()

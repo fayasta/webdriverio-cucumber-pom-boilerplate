@@ -17,12 +17,12 @@ When(/^I send an email to (.*) with (.*) and (.*)$/, (emailTo, subject, body) =>
     newEmail.writeEmail(emailTo, subject, body);
 });
 
-When(/^I draft an email to (.*) with (.*) and (.*)$/, (emailTo, subject, body) => {
+Given(/^I draft an email to (.*) with (.*) and (.*)$/, (emailTo, subject, body) => {
     leftMenu.clickOnComposeButton();
     newEmail.draftEmail(emailTo, subject, body);
 });
 
-When(/^I schedule an email to (.*) with (.*) and (.*)$/, (emailTo, subject, body) => {
+Given(/^I schedule an email to (.*) with (.*) and (.*)$/, (emailTo, subject, body) => {
     leftMenu.clickOnComposeButton();
     newEmail.scheduleEmail(emailTo, subject, body);
 });

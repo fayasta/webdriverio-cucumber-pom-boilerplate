@@ -17,7 +17,7 @@ Feature: Validate the Email Boxes of Gmail App
   Scenario Outline: As a user, I should see my Sent folder
     When I send an email to <email_To> with <subject_title> and <body_text>
     Then I verify the email <subject_title> sent should be at Sent Box
-    Then I delete selected email
+    And I delete selected email
 
     Examples:
     | email_To | subject_title | body_text|
@@ -26,9 +26,9 @@ Feature: Validate the Email Boxes of Gmail App
     
   @Functionalities @DraftBox
   Scenario Outline: As a user, I should see my Drafts folder
-    When I draft an email to <email_To> with <subject_title> and <body_text>
+    Given I draft an email to <email_To> with <subject_title> and <body_text>
     Then I verify the email <subject_title> was sent to Draft box
-    Then I discard draft email
+    And I discard draft email
 
     Examples:
     | email_To | subject_title | body_text|
@@ -37,7 +37,7 @@ Feature: Validate the Email Boxes of Gmail App
 
   @Functionalities @ScheduledBox
   Scenario Outline: As a user, I should see my Scheduled folder
-    When I schedule an email to <email_To> with <subject_title> and <body_text>
+    Given I schedule an email to <email_To> with <subject_title> and <body_text>
     Then I verify the message when an email was scheduled
     And I verify the email <subject_title> was sent to Scheduled box
     Then I cancel scheduled email

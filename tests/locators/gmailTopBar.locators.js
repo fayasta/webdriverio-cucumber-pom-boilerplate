@@ -7,7 +7,7 @@ class gmailTopBar {
     this.actionBar = 'div.D.E.G-atb.aCh';
     this.deleteOption = 'div.T-I.J-J5-Ji.nX.T-I-ax7.T-I-Js-Gs.mA';
     this.gmailLogo = 'img.gb_ua';
-    this.primaryTabElement = './/*[@id=":2a"]';
+    this.primaryTabElement = './/div[@class="aAy J-KU-KO aIf-aLe"]';
   }
 }
 

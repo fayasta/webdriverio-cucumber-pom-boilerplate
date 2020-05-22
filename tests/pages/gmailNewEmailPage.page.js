@@ -53,6 +53,7 @@ class gmailNewEmailPage extends NativePage {
     const closeSaveButton = $(this.webdriverIOEmailPageElement.closeSaveButton)
     closeSaveButton.isClickable();
     closeSaveButton.click();
+    browser.pause(3000)
   }
 
   scheduleEmail(emailTo, subject, body){
