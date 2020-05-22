@@ -1,6 +1,5 @@
 const cucumberJson = require ('wdio-cucumberjs-json-reporter').default;
 
-
 const {After, Status} = require('cucumber');
 
 After((scenarioResult)=>{
@@ -9,3 +8,4 @@ After((scenarioResult)=>{
     }
     return scenarioResult.status;
 });
+    
