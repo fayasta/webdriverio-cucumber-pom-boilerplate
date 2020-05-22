@@ -1,6 +1,6 @@
 const NativePage = require('./native.page.js');
 const assert = require('assert');
-const webdriverIOHomePageData = require('../files/testData/sampleHome.data.js');
+const webdriverIOHomePageData = require('../files/testData/sampleUser.data.js');
 
 class googleGmailHome extends NativePage {
 
