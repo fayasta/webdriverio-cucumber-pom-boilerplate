@@ -39,16 +39,6 @@ class gmailTopBar extends NativePage {
     searchIcon.click()
   }
 
-/*
-  deleteEmail(){
-      const actionBar = $(this.webdriverIOTopBarPageElement.actionBar)
-      actionBar.waitForEnabled()
-      //Delete option
-      const deleteOption = $(this.webdriverIOTopBarPageElement.deleteOption)
-      deleteOption.waitForEnabled()
-      deleteOption.click()
-  }
-*/
 
 }
 

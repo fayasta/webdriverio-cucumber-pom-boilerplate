@@ -68,13 +68,6 @@ class gmailTabPrimary extends NativePage {
     deleteButton.click();
   }
 
-/*
-  cancelEmailSelected(){
-    const cancelEmailsButton = $(this.webdriverIOTabPrimaryPageElement.cancelEmailsButton)
-    cancelEmailsButton.moveTo()
-    cancelEmailsButton.click()
-  }
-*/
 }
 
 module.exports = gmailTabPrimary;
