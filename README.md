@@ -12,7 +12,7 @@ Branch: master
 
 # Installation
 PRECONDITION:
-- Do not forget to install node
+- Do not forget to install node.js
 
 1. Go to the folder 'webdriverio-cucumber-pom-boilerplate'
 2. Then run the command:
